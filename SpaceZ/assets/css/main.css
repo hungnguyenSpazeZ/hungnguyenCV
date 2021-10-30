@@ -1,0 +1,549 @@
+.app {
+    position: relative;
+}
+
+.header {       
+    z-index:  1;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.header__navbar {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+
+/* Header logo */
+
+.header__logo {
+    left: 0;
+    flex: 1;
+}
+
+.header__logo-link {
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 600;  
+    color: var(--white-color);
+    display: inline-block;
+}
+
+.header__logo-link span {
+    position: relative;
+    top: -10px;
+    margin-left: 4px;
+}
+
+.header__logo-img {
+    font-size: 4rem;
+}
+
+/* Header Navbar Main */
+
+.header__navbar-main {
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.header__navbar-main-item {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 400;  
+    position: relative;
+    margin: 0 20px;
+}
+
+.header__navbar-main-item-name::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--white-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s;
+}
+.header__navbar-main-item-name {
+    cursor: pointer;   
+}
+
+.header__navbar-main-item-name:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-duration: 0.4s;
+}
+
+.header__navbar-main-item-link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#navbar__mission::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    width: 140px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#navbar__mission:hover .navbar__list {
+    display: block;
+    animation: fadeIn ease-in-out 0.4s;
+}
+
+.navbar__list {
+    position: absolute;
+    top: 49px;
+    left: 0px;
+    width: 180px;
+    justify-content: space-between;
+    list-style: none;
+    display: none;
+    background-color: rgba(225, 225, 225, 0.8);
+    padding: 0;
+}
+
+.navbar__list-item {
+    padding: 10px 0 10px 20px;
+}
+
+.navbar__list-item-link {
+    color: var(--black-color);
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    font-weight: 600;
+}
+
+.navbar__list-item:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn ease-in-out 0.4s;
+}
+
+.navbar__list-item:hover .navbar__list-item-link {
+    color: var(--white-color);
+}
+
+/* Header Subnav */
+
+.header__subnav-wrap {
+    flex: 1;
+}
+
+.header__subnav {
+    flex: 1;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__subnav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__subnav-item-link {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none; 
+    display: block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.header__subnav-item-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--white-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s;
+}
+
+.header__subnav-item-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-duration: 0.4s;
+}
+
+.header__subnav-item-register {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: block;
+    padding: 12px 8px;
+    cursor: pointer;
+}
+
+.header__subnav-item-register-img {
+    margin: 0 5px;
+}
+
+.header__subnav-item-register-img:hover {
+    opacity: 0.8;
+}
+
+.fas.fa-fingerprint {
+    font-size: 2.2rem;
+    color: #717171;
+}
+
+/* Scroller */
+
+
+
+/* Human spaceflight */
+
+#Human-spaceflight .feature {
+    background-image: url(../img/background-img/space/bg8.jpg);
+}
+
+.section__sale-link {
+    text-align: center;
+    padding: 75px 0 20px;
+    background-color: var(--black-color);
+}
+
+.section__sale-link p {
+    line-height: 3rem;
+}
+
+.section__sale-link a {
+    text-decoration: none;
+}
+
+.section__sale-link a:hover {
+    opacity: 0.6;
+    transition-duration: 0.6s;
+}
+
+.section__about {
+    height: 625px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(	https://www.spacex.com/static/images/backgrounds/dragon_humans.webp);
+    position: relative;
+}
+
+.section__about .content-right {
+    top: 12%;
+}
+
+.section__about-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+.section__about-content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.section__about-link {
+    position: relative;
+    color: var(--white-color);
+}
+
+.btn:hover .section__about-link {
+    color: var(--black-color);
+}
+
+.section__about-2 {
+    height: 625px;
+    background-color: var(--black-color);
+    position: relative;
+    padding: 100px 0; 
+}
+
+.section__about-2-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section__about-2-img img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+/* Missions */
+.section__mission {
+    height:  625px;
+    background-position: center center;
+    background-size: cover;    
+    position: relative;
+}
+
+#mission-earth {
+    background-image: url(https://www.spacex.com/static/images/backgrounds/human_spaceflight_earth.jpg);
+}
+#mission-iss {
+    background-image: url(https://www.spacex.com/static/images/backgrounds/human_spaceflight_iss.jpg);
+}
+#mission-moon {
+    background-image: url(https://www.spacex.com/static/images/backgrounds/human_spaceflight_moon.jpg);
+}
+#mission-mars {
+    background-image: url(https://www.spacex.com/static/images/backgrounds/human_spaceflight_mars.jpg);
+}
+
+.section__mission-heading {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.section__mission-name {
+    margin: 0;
+    font-size: 8rem;
+    line-height: 7rem;
+}
+.section__mission-content {
+    margin: 20px 0 0;
+    font-size: 1.6rem;
+    max-width: 330px;
+}
+
+.section__mission-link {
+    color: var(--white-color);
+    padding: 0 15px;
+    position: relative;
+}
+
+.btn:hover .section__mission-link {
+    color: var(--black-color);
+}
+
+/* Rideshare */
+
+#Rideshare .feature {
+    background-image: url(/SpaceZ/assets/img/background-img/space/bg10.jpg);
+    position: relative;
+}
+
+#Rideshare .feature__content {
+    top: 40%;
+}
+
+#Rideshare .feature__content-main {
+    font-size: 7.2rem;
+    font-weight: 650;
+}
+
+.feature__form-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.feature__form {
+    display: flex;
+    justify-content: center;
+}
+
+.feature__form-heading {
+    color: #ababab;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.feature__form-content {
+    margin-top: 5px;
+    display: flex;
+}
+.feature__form-content-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    flex: 1;
+}
+.feature__form-content-icon {
+    font-size: 2rem;
+}
+
+.feature__form-load {
+    display: flex;
+}
+
+.feature__form-load .feature__form-heading {
+    flex: 1;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    line-height: 50px;
+}
+
+.feature__form-load .feature__form-content {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0;
+}
+
+.feature__form-price {
+    height: 68px;
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    border: 1px solid #888;
+}
+.feature__form-btn {
+    height: 68px;
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10px 0;
+    border: 1px solid #888;
+}
+
+.feature__form-btn-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.feature__form-btn-link i {
+    color:#3f3f3f;
+    font-size: 3.4rem;    
+    font-weight: 700;
+}
+
+.feature__form-price-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.feature__form-price-label span {
+    margin: 4px auto;
+    display: block;
+}
+.feature__form-price-value {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.columns {
+    background-color: var(--black-color);
+    display: flex;
+    padding: 75px 30px 75px 30px;
+}
+
+.columns__heading {
+    display: flex;
+}
+
+.columns__heading-icon {
+    color: #848484;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.columns__heading-title {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 12px;
+    max-width: 220px;
+}
+
+.columns__description {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-top: 30px;
+    max-width: 300px;
+}
+
+/* footer */
+
+.footer {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://www.spacex.com/static/images/dragon/refresh/DRAGON_CRS-22_3840x2560_Desktop.webp);
+    height: 625px;
+    position: relative;
+}
+
+.footer__contact {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+}
+.footer__contact-heading {
+    color: #6f6f6f;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.footer__contact-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__contact-heading a {
+    color: #9c9c9c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer__contact-heading a:hover {
+    opacity: 0.8;
+}
+
+.footer__contact-btn-link {
+    color: var(--white-color);
+    text-decoration: none;
+    position: relative;
+}
+
+.btn:hover .footer__contact-btn-link {
+    color: var(--black-color);
+}
+.footer__social {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.footer__social span {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+}
+
+.footer__social-link {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.footer__social-link:hover {
+    opacity: 0.8;
+}

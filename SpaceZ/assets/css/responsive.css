@@ -1,0 +1,151 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__subnav-wrap {
+        padding-right: 18px;
+    }    
+
+    .header__logo {
+        padding-left: 18px;
+    }
+
+    .feature__form {
+        flex-wrap: wrap;
+    }
+
+    .footer__social {
+        max-width: 700px;
+        margin: 0 0 80px 34px;
+    }
+
+}
+
+/* MOBILE  */
+
+@media (max-width: 739px) {
+
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__navbar-main-wrap {
+        display: none;
+    }
+    .header__subnav-wrap {
+        display: none;
+    }
+
+    #Human-spaceflight .section__about-heading {
+        font-size: 3.6rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    #Human-spaceflight .section__about-content {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    #Human-spaceflight .feature__content-main {
+        font-size: 4.8rem;
+        font-weight: 600;        
+    }
+    
+    #Human-spaceflight .feature__content-sub {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #Human-spaceflight .content-center {
+        font-size: 1.4rem;
+    }
+    
+    .section__mission-heading {
+        font-size: 1.5rem;
+    }
+    .section__mission-name {
+        font-size: 3.6rem ;
+        line-height: 4rem;
+    }
+    .section__mission-content {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+    }
+    .section__mission-link {
+        font-size: 1.4rem;
+    }
+
+    #Rideshare .feature__content {
+        top: 24%;
+    }
+
+    #Rideshare .feature__form-wrap {
+        top: 30%;
+    }
+
+    #Rideshare .feature__content-main {
+        font-size: 3rem;
+    }
+
+    #Rideshare .feature__content-sub {
+        font-size: 1.5rem;
+    }
+
+    #Rideshare .feature__form {
+        flex-wrap: wrap;
+    }
+
+    #Rideshare .feature__form-price {
+        width: 125px;
+    }
+
+    #Rideshare .feature__form-btn {
+        margin: 10px;
+    }
+
+    #Rideshare .columns {
+        display: block;
+    }
+
+    #Rideshare .column-3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #Rideshare .columns__heading-icon {
+        font-size: 4rem;
+    }
+    #Rideshare .columns__heading-title {
+        font-size: 3rem;
+    }
+    #Rideshare .columns__description {
+        font-size: 1.6rem;
+    }
+
+    .footer__contact-heading {
+        font-size: 1.2rem;
+        padding: 0 30px;
+    }
+
+    .footer__contact-heading a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__social {
+        width: 100%;
+        display: block;
+    }
+
+    .footer__social span {
+        margin: 0;
+    }
+
+    .footer__social-link {
+        display: none
+    }
+}
